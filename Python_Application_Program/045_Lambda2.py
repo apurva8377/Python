@@ -1,0 +1,32 @@
+##################################################################################################################
+#
+#  Program Name : 045_Lambda2.py
+#  Discription  : Write a Lambda function to to check even numbers
+#  Auther       : Apurva Vilas Shinde
+#  Date         : 11/05/2026
+#
+##################################################################################################################
+
+# Functional
+
+# def CheckEven(No):
+#     return (No % 2 == 0)
+
+CheckEven = lambda No : (No % 2 == 0)
+
+def main():
+    Value = 0
+    Ret = 0
+
+    print("Enter number : ")
+    Value = int(input())
+
+    Ret = CheckEven(Value)
+
+    if(Ret == True):
+        print("It is Even")
+    else:
+        print("It is Odd")
+
+if __name__ == "__main__":
+    main()

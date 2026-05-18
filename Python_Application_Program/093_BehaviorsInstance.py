@@ -1,0 +1,30 @@
+##################################################################################################################
+#
+#  Program Name : 093_BehavioursInstance.py
+#  Discription  : All variables
+#  Author       : Apurva Vilas Shinde
+#  Date         : 17/05/2026
+#
+##################################################################################################################
+
+class Demo:
+    No = 10
+
+    def __init__(self,A,B):    # Constructor
+        self.Value1 = A
+        self.Value2 = B
+
+    def fun(self):
+        print("Inside Instance method fun : ",self.Value1, self.Value2)
+
+    @classmethod
+    def sun(cls):
+        print("Inside class method sun : ",cls.No)
+
+Demo.sun()
+print("Class variable No : ",Demo.No)
+
+obj = Demo(11,21)
+
+obj.fun()
+print("Instance variable : ",obj.Value1, obj.Value2)

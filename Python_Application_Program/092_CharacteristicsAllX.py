@@ -1,0 +1,35 @@
+##################################################################################################################
+#
+#  Program Name : 092_CharacteristicsAllX.py
+#  Discription  : All variables
+#  Author       : Apurva Vilas Shinde
+#  Date         : 17/05/2026
+#
+##################################################################################################################
+
+class Demo:
+    No = 10
+
+    def __init__(self,A,B):
+        self.Value1 = A
+        self.Value2 = B
+
+print("Class variable No : ",Demo.No)
+
+obj1 = Demo(11,21)
+obj2 = Demo(51,101)
+
+# print(obj1.No) Allowed
+print(f"Instance variable of obj1 : {obj1.Value1} and {obj1.Value2}")
+print(f"Instance variable of obj2 : {obj2.Value1} and {obj2.Value2}")
+
+obj1.Value1 = 15
+
+Demo.No = 0
+
+print(f"Instance variable of obj1 : {obj1.Value1} and {obj1.Value2}")
+print(f"Instance variable of obj2 : {obj2.Value1} and {obj2.Value2}")
+
+print(obj1.No)   # 0
+print(obj2.No)   # 0
+
